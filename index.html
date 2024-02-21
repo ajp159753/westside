@@ -19,7 +19,6 @@
         <ul class="sidebar">
             <li onclick="closesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="#delivery" onclick="scrollToSection('delivery')">Delivery</a></li>
-            <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
             <li><a href="#hours" onclick="scrollToSection('hours')">Hours</a></li>
             <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
             
@@ -32,8 +31,7 @@
           
             <li  style="margin-left: 50px;"   class="hideonmobile"><a href="#delivery" onclick="scrollToSection('delivery')">Delivery</a></li>
             <li class="hideonmobile"><a href="#location" onclick="scrollToSection('location')">Location</a></li>
-            <li class="hideonmobile"><a href="#about" onclick="scrollToSection('about')">About</a></li>
-            
+    
             <img class = "topimage" style="padding-bottom: 20px;" src="westsidelogo.PNG" alt="Description of your image" class="logo">
             <li class="hideonmobile"><a href="#hours" onclick="scrollToSection('hours')">Hours</a></li>
             <li class="hideonmobile"><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
@@ -173,6 +171,17 @@
 </section>
 
 
+<p>POOOOOOOOOOOO</p>
+<p>POOOOOOOOOOOO</p>
+
+<p>POOOOOOOOOOOO</p>
+
+<p>POOOOOOOOOOOO</p>
+
+<p>POOOOOOOOOOOO</p>
+<p>POOOOOOOOOOOO</p>
+<p>POOOOOOOOOOOO</p>
+
 
 
 
@@ -301,6 +310,9 @@ function scrollToSection(sectionId) {
             sendFeedbackEmail(feedback);
         }
     }
+
+    // Stop event propagation to prevent it from reaching the parent container
+    event.stopPropagation();
 }
 
 function sendFeedbackEmail(feedback) {

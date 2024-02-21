@@ -70,16 +70,29 @@ nav.hidden {
     justify-content: space-around;
 }
 
+
+
+
+
+
+
+
 /* Media query for smaller screens */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
 
     .topbar {
+        
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center all items horizontally */
         
     }
 
+    header {
+        max-width: 100%;
+    }
     .topimage {
+        max-width: 240px;
+        height: auto;
         margin: 0; /* Remove margin to prevent stretching */
         justify-content: center;
     }
@@ -114,10 +127,6 @@ nav.hidden {
         align-items: center; /* Center all items horizontally */
     }
 
-    .topimage {
-        margin: 0 auto; /* Remove margin to prevent stretching */
-        justify-content: center;
-    }
 
     .hideonmobile {
         display: none; /* Hide the list items on mobile */
@@ -270,6 +279,13 @@ html {
 }
 
 
+@media screen and (max-width: 800px) {
+    .topimage {
+        width: 60%; /* Adjust the width as needed */
+        margin: 0 auto; /* Center the image horizontally */
+        display: block; /* Ensure it's displayed as a block element */
+    }
+}
 
 
 .image-container2 {
